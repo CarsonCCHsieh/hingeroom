@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/4d6b7c9b-eb45-4a0b-8808-bcae67607d86>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 71948a5a-6c01-4ea8-a84e-83935d463b5b
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 71948a5a-6c01-4ea8-a84e-83935d463b5b
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> f3ce94c5-7ed8-45eb-9641-0d4690008c85
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f3ce94c5-7ed8-45eb-9641-0d4690008c85>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: fbbd2c80-d83f-401f-851f-aeb936a404bb
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    color: false
+    edgeColor: false
+    material: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      color: !<Vec4> {x: 0.570000, y: 0.690000, z: 0.770000, w: 1.000000}
+      edgeColor: !<Vec4> {x: 0.150000, y: 0.950000, z: 1.000000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"HINGEROOM — Rigid door 60 × 76 × 2 cm"}'
+    - '// @input Asset.Material material {"hint":"Unlit material shared at the asset boundary."}'
+    - '// @input vec4 color = "{0.57,0.69,0.77,1}" {"hint":"Slab tint.", "widget":"color"}'
+    - '// @input vec4 edgeColor = "{0.15,0.95,1,1}" {"hint":"Edge tint inside the slab footprint.", "widget":"color"}'

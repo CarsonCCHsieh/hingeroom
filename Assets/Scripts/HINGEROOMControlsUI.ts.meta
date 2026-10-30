@@ -1,0 +1,64 @@
+- !<AssetImportMetadata/7b2f7ad9-cbce-4189-9c85-083413cd0946>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> bfdcd880-471a-4aaa-b444-8e724f24c46e
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> bfdcd880-471a-4aaa-b444-8e724f24c46e
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e423a771-ec5d-4656-8682-22e5a98871b3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e423a771-ec5d-4656-8682-22e5a98871b3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 15e5912b-67b8-4968-b08f-3dc9829f3fe1
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    paddingCm: false
+    resetLabel: false
+    textColor: false
+    textScale: false
+    title: false
+    widthCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - widthCm: !<float> 36.000000
+      paddingCm: !<float> 2.000000
+      textScale: 1.250000
+      title: HINGEROOM
+      resetLabel: Reset example
+      textColor: !<Vec4> {x: 0.940000, y: 0.990000, z: 1.000000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"HINGEROOM — Task-adjacent controls"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float widthCm = 36 {"hint":"Panel width in centimeters.", "widget":"slider", "min":30, "max":45, "step":1}'
+    - '// @input float paddingCm = 2 {"hint":"Content padding in centimeters.", "widget":"slider", "min":1, "max":3, "step":0.1}'
+    - '// @input float textScale = 1.25 {"hint":"Central text scale at the working distance.", "widget":"slider", "min":1, "max":1.6, "step":0.05}'
+    - '// @input string title = "HINGEROOM" {"hint":"Panel title."}'
+    - '// @input string resetLabel = "Reset example" {"hint":"Reset action label."}'
+    - '// @input vec4 textColor = "{0.94,0.99,1,1}" {"hint":"Readable light text color.", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

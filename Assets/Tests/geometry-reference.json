@@ -1,0 +1,113 @@
+{
+    "kind":  "public_expected_geometry_fixture",
+    "path_reference_results":  {
+                                   "default_10":  {
+                                                      "center_cm":  [
+                                                                        35,
+                                                                        35
+                                                                    ],
+                                                      "end_angle_degrees":  10,
+                                                      "expected_status":  "clear",
+                                                      "status":  "clear",
+                                                      "reason":  "all_intervals_certified",
+                                                      "evaluations":  1,
+                                                      "certified_intervals":  1,
+                                                      "deepest_level":  0
+                                                  },
+                                   "default_45":  {
+                                                      "center_cm":  [
+                                                                        35,
+                                                                        35
+                                                                    ],
+                                                      "end_angle_degrees":  45,
+                                                      "expected_status":  "blocked",
+                                                      "status":  "blocked",
+                                                      "reason":  "distance_witness",
+                                                      "witness_angle_degrees":  33.75,
+                                                      "witness_distance_cm":  0.0,
+                                                      "evaluations":  3,
+                                                      "deepest_level":  1
+                                                  },
+                                   "default_90":  {
+                                                      "center_cm":  [
+                                                                        35,
+                                                                        35
+                                                                    ],
+                                                      "end_angle_degrees":  90,
+                                                      "expected_status":  "blocked",
+                                                      "status":  "blocked",
+                                                      "reason":  "distance_witness",
+                                                      "witness_angle_degrees":  45.0,
+                                                      "witness_distance_cm":  0.0,
+                                                      "evaluations":  1,
+                                                      "deepest_level":  0
+                                                  },
+                                   "aabb_counterexample_45":  {
+                                                                  "center_cm":  [
+                                                                                    10,
+                                                                                    35
+                                                                                ],
+                                                                  "end_angle_degrees":  45,
+                                                                  "expected_status":  "clear",
+                                                                  "status":  "clear",
+                                                                  "reason":  "all_intervals_certified",
+                                                                  "evaluations":  7,
+                                                                  "certified_intervals":  4,
+                                                                  "deepest_level":  3
+                                                              },
+                                   "negative_x_90":  {
+                                                         "center_cm":  [
+                                                                           -15,
+                                                                           55
+                                                                       ],
+                                                         "end_angle_degrees":  90,
+                                                         "expected_status":  "clear",
+                                                         "status":  "clear",
+                                                         "reason":  "all_intervals_certified",
+                                                         "evaluations":  5,
+                                                         "certified_intervals":  3,
+                                                         "deepest_level":  2
+                                                     },
+                                   "negative_x_110":  {
+                                                          "center_cm":  [
+                                                                            -15,
+                                                                            55
+                                                                        ],
+                                                          "end_angle_degrees":  110,
+                                                          "expected_status":  "blocked",
+                                                          "status":  "blocked",
+                                                          "reason":  "distance_witness",
+                                                          "witness_angle_degrees":  96.25,
+                                                          "witness_distance_cm":  0.0,
+                                                          "evaluations":  5,
+                                                          "deepest_level":  2
+                                                      },
+                                   "far_110":  {
+                                                   "center_cm":  [
+                                                                     80,
+                                                                     80
+                                                                 ],
+                                                   "end_angle_degrees":  110,
+                                                   "expected_status":  "clear",
+                                                   "status":  "clear",
+                                                   "reason":  "all_intervals_certified",
+                                                   "evaluations":  3,
+                                                   "certified_intervals":  2,
+                                                   "deepest_level":  1
+                                               },
+                                   "narrow_margin_50":  {
+                                                            "center_cm":  [
+                                                                              52.41015008585,
+                                                                              53.15688226442
+                                                                          ],
+                                                            "end_angle_degrees":  50,
+                                                            "expected_status":  "blocked",
+                                                            "status":  "blocked",
+                                                            "reason":  "distance_witness",
+                                                            "witness_angle_degrees":  44.53125,
+                                                            "witness_distance_cm":  0.4992143514649055,
+                                                            "evaluations":  13,
+                                                            "deepest_level":  5
+                                                        }
+                               }
+}

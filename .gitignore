@@ -1,0 +1,23 @@
+# Public Lens project: generated files and local-only configuration
+/.git/
+/.codex/
+/.claude/
+/.cursor/
+/.vscode/
+/.agents/
+/Cache/
+/Support/
+/PluginsUserPreferences/
+/Workspaces/
+/BackUp/
+/node_modules/
+/logs/
+/reports/
+/private-backups/
+**/.mcp.json
+**/mcp.json
+**/.env
+**/.env.*
+**/*_key.pem
+**/spk_debug_key.pem
+/.DS_Store

@@ -1,0 +1,87 @@
+- !<AssetImportMetadata/480b64cf-9599-4529-9695-44fe5af1790d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 945b7eab-82af-4eb8-a398-51c973b5320d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 945b7eab-82af-4eb8-a398-51c973b5320d
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 917cd668-c38f-41bf-801a-16c6b48f78a3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/917cd668-c38f-41bf-801a-16c6b48f78a3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: fff4d09b-5fa0-49f3-85cb-2eba9ddc36d3
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    cabinet: false
+    camera: false
+    clearance: false
+    clearanceRoot: false
+    controls: false
+    debugColliders: false
+    floorAnchor: false
+    hinge: false
+    obstacle: false
+    panelHeightCm: false
+    panelOffsetX: false
+    panelRoot: false
+    placementDistanceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      cabinet: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hinge: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      clearanceRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      panelRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      floorAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      controls: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      obstacle: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      clearance: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      placementDistanceCm: !<float> 140.000000
+      panelOffsetX: !<float> 30.000000
+      panelHeightCm: !<float> 110.000000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"HINGEROOM — Virtual cabinet clearance rehearsal"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Component.Camera camera {"hint":"Actual world-tracked starting camera."}'
+    - '// @input SceneObject cabinet {"hint":"Authored cabinet root; placed once."}'
+    - "// @input SceneObject hinge {\"hint\":\"Authored hinge child at the cabinet's front left.\"}"
+    - '// @input SceneObject clearanceRoot {"hint":"Authored clearance guide root sharing the cabinet basis."}'
+    - '// @input SceneObject panelRoot {"hint":"Authored world-fixed control panel."}'
+    - '// @input SceneObject floorAnchor {"hint":"Explicit virtual example floor reference, not sensed room geometry."}'
+    - '// @input AssignableType_1 controls {"hint":"Passive UIKit view."}'
+    - '// @input AssignableType_2 obstacle {"hint":"SIK floor drag controller."}'
+    - '// @input AssignableType_3 clearance {"hint":"Passive procedural path visual."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float placementDistanceCm = 140 {"hint":"Initial cabinet front distance from starting camera in cm.", "widget":"slider", "min":120, "max":180, "step":1}'
+    - '// @input float panelOffsetX = 30 {"hint":"World-fixed panel X offset in the cabinet frame, in cm.", "widget":"slider", "min":0, "max":100, "step":1}'
+    - '// @input float panelHeightCm = 110 {"hint":"Panel center height above the virtual example floor, in cm.", "widget":"slider", "min":105, "max":145, "step":1}'
+    - '// @input bool debugColliders {"hint":"Wireframe all interaction colliders in this experience."}'
+    - '// @ui {"widget":"group_end"}'

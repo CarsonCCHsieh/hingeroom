@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/1c1722f2-cfa4-452a-8fc9-e63faa221112>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 231f8e79-63da-4c8a-8154-e6799885aba7
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 231f8e79-63da-4c8a-8154-e6799885aba7
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 21ca231d-5b42-42ad-8aa2-cc2b0af6f12b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/21ca231d-5b42-42ad-8aa2-cc2b0af6f12b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 640b3959-0c42-4ab3-97e6-21dd37754373
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugColliders: false
+    material: false
+    visualRoot: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      visualRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"HINGEROOM — Floor-constrained 20 × 20 × 60 cm box"}'
+    - '// @input Asset.Material material {"hint":"Unlit base material; size is baked in centimeters."}'
+    - '// @input SceneObject visualRoot {"hint":"Author-visible visual child. Rotation is baked into geometry, not its parent."}'
+    - '// @input bool debugColliders {"hint":"Show the exact mesh collider in Preview."}'

@@ -1,0 +1,375 @@
+{
+    "status":  "reviewable_local_build_verified",
+    "tier":  "interactive",
+    "editor":  "5.23.2.26081320",
+    "freshAuthorizationChecks":  1,
+    "isAuthorized":  true,
+    "asset_manifest":  {
+                           "meshes":  [
+                                          "HINGEROOMCabinetMesh.ts",
+                                          "HINGEROOMDoorMesh.ts",
+                                          "HINGEROOMObstacleController.ts",
+                                          "HINGEROOMClearanceMesh.ts"
+                                      ],
+                           "sfx":  [
+
+                                   ],
+                           "icons":  [
+
+                                     ],
+                           "ui_modules":  [
+                                              "HINGEROOMControlsUI.ts"
+                                          ],
+                           "scripts":  [
+                                           "HINGEROOMCabinetMesh.ts",
+                                           "HINGEROOMClearanceMesh.ts",
+                                           "HINGEROOMControlsUI.ts",
+                                           "HINGEROOMCounterexampleScenario.ts",
+                                           "HINGEROOMDoorMesh.ts",
+                                           "HINGEROOMGeometry.ts",
+                                           "HINGEROOMGeometryScenario.ts",
+                                           "HINGEROOMIntegrationHelpers.ts",
+                                           "HINGEROOMLeafIndex.ts",
+                                           "HINGEROOMMain.ts",
+                                           "HINGEROOMMeshPrimitives.ts",
+                                           "HINGEROOMObstacleController.ts",
+                                           "HINGEROOMObstacleScenario.ts",
+                                           "HINGEROOMOpeningScenario.ts",
+                                           "HINGEROOMReachScenario.ts",
+                                           "HINGEROOMSceneContracts.ts",
+                                           "HINGEROOMState.ts",
+                                           "HINGEROOMWorldAnchorScenario.ts"
+                                       ]
+                       },
+    "backend_deviations":  [
+                               {
+                                   "mesh":  "HINGEROOMCabinetMesh.ts",
+                                   "backend":  "mesh-builder-scripting",
+                                   "reason":  "Assistant selected mesh-builder-scripting to implement the precise articulated cabinet and exact-size obstacle in the user-adopted approved brief."
+                               },
+                               {
+                                   "mesh":  "HINGEROOMDoorMesh.ts",
+                                   "backend":  "mesh-builder-scripting",
+                                   "reason":  "Assistant selected mesh-builder-scripting to implement the precise articulated cabinet and exact-size obstacle in the user-adopted approved brief."
+                               },
+                               {
+                                   "mesh":  "HINGEROOMObstacleController.ts",
+                                   "backend":  "mesh-builder-scripting",
+                                   "reason":  "Assistant selected mesh-builder-scripting to implement the precise articulated cabinet and exact-size obstacle in the user-adopted approved brief."
+                               },
+                               {
+                                   "mesh":  "HINGEROOMClearanceMesh.ts",
+                                   "backend":  "mesh-builder-scripting",
+                                   "reason":  "Assistant selected mesh-builder-scripting to implement the precise articulated cabinet and exact-size obstacle in the user-adopted approved brief."
+                               }
+                           ],
+    "spatial_layout":  "Starting camera supplies flat view/right basis. Virtual floor anchor supplies floor Y. Cabinet front center at camera + view*140 cm, hinge 30 cm left. Cabinet shell local x=[0,60], y=[0,80], z=[-39,-1], closed door z=[-1,1], giving full 60x40x80 cm envelope. Obstacle center local (35,30,35). Clearance shares cabinet basis. Panel center local (30,110,8), width36cm, vertically adjacent above the cabinet with 3.25cm gap at default layout height53.5cm. This keeps controls within the central horizontal view of the narrow Preview. All world-fixed after initial placement; identity-scale obstacle collider wrapper at floor+30; basis baked into obstacle mesh and collider.",
+    "installed_packages":  [
+                               {
+                                   "packageName":  "SpectaclesInteractionKit",
+                                   "path":  "Packages/SpectaclesInteractionKit.lspkg",
+                                   "version":  "2.0.0"
+                               },
+                               {
+                                   "packageName":  "SpectaclesUIKit",
+                                   "path":  "Packages/SpectaclesUIKit.lspkg",
+                                   "version":  "2.0.0"
+                               },
+                               {
+                                   "packageName":  "AiPreviewAgentInspect",
+                                   "path":  "Packages/AiPreviewAgentInspect.lspkg",
+                                   "version":  "2.0.1"
+                               },
+                               {
+                                   "packageName":  "AiPreviewAgentInteract",
+                                   "path":  "Packages/AiPreviewAgentInteract.lspkg",
+                                   "version":  "2.0.1"
+                               },
+                               {
+                                   "packageName":  "Leaf",
+                                   "path":  "Packages/Leaf.lspkg",
+                                   "version":  "2.0.2"
+                               },
+                               {
+                                   "packageName":  "Leaf 3",
+                                   "path":  "Packages/Leaf 3.lspkg",
+                                   "version":  "2.0.0"
+                               },
+                               {
+                                   "packageName":  "Bitmoji 3D",
+                                   "path":  "Packages/Bitmoji 3D.lsc",
+                                   "version":  "10.0.1"
+                               }
+                           ],
+    "geometry":  {
+                     "nodePrimaryVectors":  8,
+                     "nodeGroups":  18,
+                     "nodePassed":  true,
+                     "lensRuntimeGeometryScenario":  "succeeded",
+                     "marginCm":  0.5,
+                     "epsilonCm":  0.0001,
+                     "uncertifiedIntervals":  "blocked conservatively",
+                     "wholePath":  "[0, selectedAngle]",
+                     "currentPanelOverlap":  "separate fact"
+                 },
+    "leaf":  [
+                 {
+                     "id":  "hingeroom-geometry",
+                     "status":  "succeeded",
+                     "source":  "actual Preview tool result and Lens-side PASSED"
+                 },
+                 {
+                     "id":  "hingeroom-opening",
+                     "status":  "succeeded",
+                     "diagnosticPolicy":  "fail-fast",
+                     "covers":  [
+                                    "0..110 rigid hinge",
+                                    "actual door vertices [0,2,-1]..[60,78,1] cm",
+                                    "10/45/90 exact states",
+                                    "standard SIK slider",
+                                    "reset"
+                                ]
+                 },
+                 {
+                     "id":  "hingeroom-obstacle-reset",
+                     "status":  "succeeded",
+                     "diagnosticPolicy":  "fail-fast",
+                     "covers":  [
+                                    "actual SIK floor drag away/back",
+                                    "clear/blocked updates without restart",
+                                    "reset and repeat"
+                                ]
+                 },
+                 {
+                     "id":  "hingeroom-counterexamples",
+                     "status":  "succeeded",
+                     "covers":  [
+                                    "AABB false positive",
+                                    "negative X after 90 degrees",
+                                    "narrow 0.499 cm margin"
+                                ]
+                 },
+                 {
+                     "id":  "hingeroom-world-anchor",
+                     "status":  "succeeded",
+                     "diagnosticPolicy":  "fail-fast",
+                     "covers":  [
+                                    "camera movement leaves roots fixed",
+                                    "same actual mesh for obstacle visual/collider",
+                                    "identity wrapper",
+                                    "baked 20x60x20 geometry under 30-degree cabinet basis"
+                                ]
+                 },
+                 {
+                     "id":  "hingeroom-reach",
+                     "status":  "succeeded",
+                     "diagnosticPolicy":  "fail-fast",
+                     "covers":  [
+                                    "local IK Reset operation; no fallback interactor; no account avatar download"
+                                ]
+                 }
+             ],
+    "preview":  {
+                    "mouseSliderObservedDegrees":  [
+                                                       9.8,
+                                                       44.2,
+                                                       88.3
+                                                   ],
+                    "mouseSliderStatuses":  [
+                                                "clear",
+                                                "blocked",
+                                                "blocked"
+                                            ],
+                    "currentPanelAt88_3":  "no overlap",
+                    "mouseObstacleAwayWorldCm":  [
+                                                     75.347229,
+                                                     -120,
+                                                     -105.10051
+                                                 ],
+                    "mouseObstacleReturnWorldCm":  [
+                                                       5.165329,
+                                                       -120,
+                                                       -105.000259
+                                                   ],
+                    "mouseResetWorldCm":  [
+                                              5,
+                                              -120,
+                                              -105
+                                          ],
+                    "mouseResetAngleDegrees":  0,
+                    "finalCentralPanelMouseCheck":  {
+                                                        "angleDegrees":  44.2,
+                                                        "status":  "Path blocked"
+                                                    },
+                    "capturesReviewed":  [
+                                             "initial empty Preview",
+                                             "closed frontal scene",
+                                             "isolated readable UIKit panel",
+                                             "55.4-degree top view",
+                                             "9.8-degree isometric",
+                                             "88.3-degree top view",
+                                             "clean source 10.8-degree isometric",
+                                             "clean source 108.1-degree top view (negative hinge-local X)",
+                                             "final central panel at44.2 degrees isometric and isolated front",
+                                             "post-save final source isometric opening and 110-degree top view"
+                                         ],
+                    "runtimeTransformInspection":  true
+                },
+    "persisted":  {
+                      "projectName":  "lensName: HINGEROOM",
+                      "sceneBytes":  100126,
+                      "hingeroomSceneNames":  [
+                                                  "Name: HINGEROOM Obstacle",
+                                                  "Name: HINGEROOM Preview QA",
+                                                  "Name: HINGEROOMControlsUI",
+                                                  "Name: HINGEROOMMain",
+                                                  "Name: HINGEROOM Cabinet",
+                                                  "Name: HINGEROOM Hinge",
+                                                  "Name: HINGEROOMObstacleController",
+                                                  "Name: HINGEROOMLeafIndex",
+                                                  "Name: HINGEROOM Door",
+                                                  "Name: HINGEROOM Clearance",
+                                                  "Name: HINGEROOM Obstacle Visual",
+                                                  "Name: HINGEROOMCabinetMesh",
+                                                  "Name: HINGEROOM Controls",
+                                                  "Name: HINGEROOMClearanceMesh",
+                                                  "Name: HINGEROOM Example Floor",
+                                                  "Name: HINGEROOMDoorMesh",
+                                                  "Name: HINGEROOM"
+                                              ],
+                      "hdrAbsent":  true
+                  },
+    "authoredObjectCount":  128,
+    "temporaryInstrumentationRemoved":  true,
+    "contentReview":  {
+                          "privatePathsOrCredentialsInAuthoredText":  "no matches in completed targeted scan",
+                          "hdrRemovedThroughSupportedTools":  true,
+                          "inriaNoticePreserved":  "SIK Utils/OneEuroFilter.ts; original BSD-3-Clause notice unchanged",
+                          "dependencyLicenseStatement":  "Official Snap dependencies retain their own notices and terms; no blanket MIT/CC0 label applied.",
+                          "publicationClearance":  "not performed; private local handoff only",
+                          "textFilesScanned":  56,
+                          "flaggedFiles":  [
+
+                                           ]
+                      },
+    "validationWarnings":  [
+                               {
+                                   "scope":  "editor LEAF plugin lifecycle",
+                                   "message":  "Skipping plugin state save: instance was destroyed before its state finished loading.",
+                                   "lensRuntimeFailure":  false
+                               },
+                               {
+                                   "scope":  "earlier parameter probe",
+                                   "message":  "Diagnostic policy \u0027fail\u0027 was rejected and defaulted to fallback. The reach scenario was subsequently rerun successfully using the actual supported \u0027fail-fast\u0027 policy."
+                               }
+                           ],
+    "historicalRecoveryWarningsObservedAgainAsRuntimeErrors":  false,
+    "logic_proven":  [
+                         "deterministic continuous clearance cases",
+                         "Lens compilation",
+                         "six actual LEAF scenarios",
+                         "Preview slider/drag/reset via tool-injected screen mouse events",
+                         "fixed hinge rotation and world anchoring",
+                         "shared obstacle basis and collider mesh"
+                     ],
+    "feel_unproven":  [
+                          "physical Specs comfort",
+                          "real hand tracking",
+                          "real room placement accuracy",
+                          "hardware legibility",
+                          "hardware performance"
+                      ],
+    "issues":  [
+
+               ],
+    "failed":  [
+
+               ],
+    "orphan_icons":  [
+
+                     ],
+    "text_only_fallbacks":  [
+
+                            ],
+    "external_limitations":  [
+                                 "No physical Specs device available."
+                             ],
+    "self_caused_limitations":  [
+
+                                ],
+    "synckit_hygiene":  null,
+    "source_hashes":  [
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMCabinetMesh.ts",
+                              "sha256":  "a03e1b92f4771db970295830b844aa472068a1274455891606d1adddf6a9736a"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMClearanceMesh.ts",
+                              "sha256":  "11d3a2b4043b9ac94076fe2609977e8cfed80af2efbc0cb325c41c7858f3cfa2"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMControlsUI.ts",
+                              "sha256":  "9dbf34a558854e37d16b9337319e89c6efad330475eae3ce86c4493cec53d444"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMCounterexampleScenario.ts",
+                              "sha256":  "3dcf9eb6185c374e7163603a1de60ce8cfcb5f653945e9d972a5be2fe331c10b"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMDoorMesh.ts",
+                              "sha256":  "013191db84d2703ef95da360ebcbddd41f155dd45da371b6e37c6953e5570dd0"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMGeometry.ts",
+                              "sha256":  "c3a00e74a37824b14ec47936d1aff14341902fcae0d6f7c0cd497193c3ae53fb"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMGeometryScenario.ts",
+                              "sha256":  "4b68ee683f70ae9ea2624d93540f3a512c780381d506325d51d3caf8d79adf54"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMIntegrationHelpers.ts",
+                              "sha256":  "a7be6b1d94ab1869f75781e499e147f2b602a086ff86f4b0b7e47fd9afc1b29a"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMLeafIndex.ts",
+                              "sha256":  "7a0d3597cb7e4f90e1fba66f515528fed04317997244dc12077f31d5564fbd76"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMMain.ts",
+                              "sha256":  "3887035948694aaf70adc2f6de135d2deb64e4245b4eee22d8f85462e8fac4dc"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMMeshPrimitives.ts",
+                              "sha256":  "cf7619030cad61ab89295390c4b305acece8a2d1edf9b48e5368ee3813fad97f"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMObstacleController.ts",
+                              "sha256":  "9586e7b4b0a1ac9033a69746e8785a23c74aa81bfa28f2aa943349970cbf74e9"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMObstacleScenario.ts",
+                              "sha256":  "e258ffb4b06b92fbe37c68213a9df784bb401452c6f49b5a3b1e6519235775fb"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMOpeningScenario.ts",
+                              "sha256":  "8e5fbd09df0338c5ae33d65087682cc132a1cd1db6a98ab80843151c789cd6e9"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMReachScenario.ts",
+                              "sha256":  "c9e38b54a024573d4ac4c95e0b011bee596388f4c51f0ad8188dc0f0982c79cc"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMSceneContracts.ts",
+                              "sha256":  "945c46b5587c9d2e68a562e422042502f508ae83182da742897308274f2ba048"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMState.ts",
+                              "sha256":  "9bb48c27c0e857d2667b3fe3840a696154549ee862749460796600ca494fa0db"
+                          },
+                          {
+                              "path":  "Assets/Scripts/HINGEROOMWorldAnchorScenario.ts",
+                              "sha256":  "4bd125de3c176ea6bb85cfcc374be52143c98605c3a10e9814ffd430836efde4"
+                          }
+                      ]
+}

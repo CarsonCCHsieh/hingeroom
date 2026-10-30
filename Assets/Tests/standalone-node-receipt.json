@@ -1,0 +1,591 @@
+{
+  "kind": "standalone_native_node_geometry_candidate_verification",
+  "createdAtUtc": "2026-10-30T18:03:12.139Z",
+  "nativeRuntime": {
+    "version": "v24.14.0",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "notActualLensPass": true,
+  "lensTypeScriptCompilation": "not_run",
+  "preview": "not_run",
+  "leaf": "not_run",
+  "hardware": "not_run",
+  "execution": "Node built-in TypeScript type stripping; not static type checking",
+  "geometrySourceSha256": "c3a00e74a37824b14ec47936d1aff14341902fcae0d6f7c0cd497193c3ae53fb",
+  "verificationRunnerSha256": "781464520652df8e1f74c5f9babecc68f21f71b3f30563cbe2e9121a3e0faf20",
+  "independentPythonReceiptSha256": "091e1f29969300b3b34bb17d095ad19aaa6bd61b39e8f3bb66fca389b992713a",
+  "units": "centimeters; radians internally; path input degrees",
+  "marginCm": 0.5,
+  "epsilonCm": 0.0001,
+  "primaryVectorCount": 8,
+  "testGroupCount": 18,
+  "allAssertionsPassed": true,
+  "outputs": [
+    {
+      "name": "default_10",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": 35,
+        "centerZ": 35,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 10,
+      "expectedStatus": "clear",
+      "result": {
+        "status": "clear",
+        "label": "Path clear",
+        "reason": "all_intervals_certified",
+        "pathFullyCertified": true,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 15.806025830293336,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": null,
+        "intervalEvaluations": 1,
+        "distanceEvaluations": 3,
+        "certifiedIntervals": 1,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": 14.747805605497666,
+        "inputError": null
+      }
+    },
+    {
+      "name": "default_45",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": 35,
+        "centerZ": 35,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 45,
+      "expectedStatus": "blocked",
+      "result": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "distance_witness",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 0,
+        "currentPanelOverlaps": true,
+        "currentWithinMargin": true,
+        "witness": {
+          "angleDegrees": 45,
+          "distanceCm": 0
+        },
+        "intervalEvaluations": 0,
+        "distanceEvaluations": 1,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      }
+    },
+    {
+      "name": "default_90_current_clear_but_path_blocked",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": 35,
+        "centerZ": 35,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 90,
+      "expectedStatus": "blocked",
+      "result": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "distance_witness",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 23.999999999999996,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": {
+          "angleDegrees": 45,
+          "distanceCm": 0
+        },
+        "intervalEvaluations": 1,
+        "distanceEvaluations": 3,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      }
+    },
+    {
+      "name": "aabb_false_positive_45",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": 10,
+        "centerZ": 35,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 45,
+      "expectedStatus": "clear",
+      "result": {
+        "status": "clear",
+        "label": "Path clear",
+        "reason": "all_intervals_certified",
+        "pathFullyCertified": true,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 2.535533905932742,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": null,
+        "intervalEvaluations": 7,
+        "distanceEvaluations": 9,
+        "certifiedIntervals": 4,
+        "deepestLevel": 3,
+        "certifiedMinimumLowerBoundCm": 1.1472426221090148,
+        "inputError": null
+      }
+    },
+    {
+      "name": "negative_x_90",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": -15,
+        "centerZ": 55,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 90,
+      "expectedStatus": "clear",
+      "result": {
+        "status": "clear",
+        "label": "Path clear",
+        "reason": "all_intervals_certified",
+        "pathFullyCertified": true,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 4.000000000000003,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": null,
+        "intervalEvaluations": 5,
+        "distanceEvaluations": 7,
+        "certifiedIntervals": 3,
+        "deepestLevel": 2,
+        "certifiedMinimumLowerBoundCm": 0.9193005476191711,
+        "inputError": null
+      }
+    },
+    {
+      "name": "negative_x_110",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": -15,
+        "centerZ": 55,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 110,
+      "expectedStatus": "blocked",
+      "result": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "distance_witness",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 0,
+        "currentPanelOverlaps": true,
+        "currentWithinMargin": true,
+        "witness": {
+          "angleDegrees": 110,
+          "distanceCm": 0
+        },
+        "intervalEvaluations": 0,
+        "distanceEvaluations": 1,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      }
+    },
+    {
+      "name": "far_110",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": 80,
+        "centerZ": 80,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 110,
+      "expectedStatus": "clear",
+      "result": {
+        "status": "clear",
+        "label": "Path clear",
+        "reason": "all_intervals_certified",
+        "pathFullyCertified": true,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 88.7198934878104,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": null,
+        "intervalEvaluations": 3,
+        "distanceEvaluations": 5,
+        "certifiedIntervals": 2,
+        "deepestLevel": 1,
+        "certifiedMinimumLowerBoundCm": 16.32776100743414,
+        "inputError": null
+      }
+    },
+    {
+      "name": "subdegree_narrow_margin_50",
+      "passed": true,
+      "kind": "primary_vector",
+      "obstacle": {
+        "centerX": 52.41015008585,
+        "centerZ": 53.15688226442,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "angleDegrees": 50,
+      "expectedStatus": "blocked",
+      "result": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "distance_witness",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 3.0768490615386597,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": {
+          "angleDegrees": 44.53125,
+          "distanceCm": 0.49921435146490556
+        },
+        "intervalEvaluations": 13,
+        "distanceEvaluations": 15,
+        "certifiedIntervals": 5,
+        "deepestLevel": 5,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      }
+    },
+    {
+      "name": "static_distances_independent_reference_constants",
+      "passed": true,
+      "actualDistancesCm": {
+        "default10": 15.806025830293336,
+        "default90": 23.999999999999996,
+        "aabb45": 2.535533905932742,
+        "negativeX90": 4.000000000000003
+      }
+    },
+    {
+      "name": "aabb_overlap_is_not_collision",
+      "passed": true,
+      "coarseAabbOverlap": true,
+      "analyticWholePathMinimumCm": 2.5355339059327373
+    },
+    {
+      "name": "endpoints_and_integer_samples_miss_thin_margin_violation",
+      "passed": true,
+      "endpointDistancesCm": [
+        42.15688226442,
+        3.0768490615386597
+      ],
+      "bestInteger": {
+        "angle": 45,
+        "distance": 0.5050288208846031
+      },
+      "analyticMinimumCm": 0.49900000000108236,
+      "minima": [
+        {
+          "angleDegrees": 44.54515874612889,
+          "distanceCm": 0.4990000000010872
+        },
+        {
+          "angleDegrees": 46.454841253873276,
+          "distanceCm": 0.4990000000010922
+        }
+      ],
+      "adaptiveWitness": {
+        "angleDegrees": 44.53125,
+        "distanceCm": 0.49921435146490556
+      }
+    },
+    {
+      "name": "contact_margin_and_epsilon_boundaries",
+      "passed": true,
+      "samples": [
+        {
+          "name": "contact",
+          "closedDistanceCm": 0,
+          "result": {
+            "status": "blocked",
+            "label": "Path blocked",
+            "reason": "distance_witness",
+            "pathFullyCertified": false,
+            "conservativeUncertainty": false,
+            "currentDistanceCm": 0,
+            "currentPanelOverlaps": true,
+            "currentWithinMargin": true,
+            "witness": {
+              "angleDegrees": 1,
+              "distanceCm": 0
+            },
+            "intervalEvaluations": 0,
+            "distanceEvaluations": 1,
+            "certifiedIntervals": 0,
+            "deepestLevel": 0,
+            "certifiedMinimumLowerBoundCm": null,
+            "inputError": null
+          }
+        },
+        {
+          "name": "exact_margin",
+          "closedDistanceCm": 0.5,
+          "result": {
+            "status": "blocked",
+            "label": "Path blocked",
+            "reason": "distance_witness",
+            "pathFullyCertified": false,
+            "conservativeUncertainty": false,
+            "currentDistanceCm": 0,
+            "currentPanelOverlaps": true,
+            "currentWithinMargin": true,
+            "witness": {
+              "angleDegrees": 1,
+              "distanceCm": 0
+            },
+            "intervalEvaluations": 0,
+            "distanceEvaluations": 1,
+            "certifiedIntervals": 0,
+            "deepestLevel": 0,
+            "certifiedMinimumLowerBoundCm": null,
+            "inputError": null
+          }
+        },
+        {
+          "name": "within_epsilon",
+          "closedDistanceCm": 0.5000499999999999,
+          "result": {
+            "status": "blocked",
+            "label": "Path blocked",
+            "reason": "distance_witness",
+            "pathFullyCertified": false,
+            "conservativeUncertainty": false,
+            "currentDistanceCm": 0,
+            "currentPanelOverlaps": true,
+            "currentWithinMargin": true,
+            "witness": {
+              "angleDegrees": 1,
+              "distanceCm": 0
+            },
+            "intervalEvaluations": 0,
+            "distanceEvaluations": 1,
+            "certifiedIntervals": 0,
+            "deepestLevel": 0,
+            "certifiedMinimumLowerBoundCm": null,
+            "inputError": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "interior_angle_radial_margin_tangency_is_blocked",
+      "passed": true,
+      "obstacle": {
+        "centerX": 52.41085099511435,
+        "centerZ": 53.15759551486758,
+        "halfWidth": 10,
+        "halfDepth": 10,
+        "yMin": 0,
+        "yMax": 60
+      },
+      "analyticMinimumCm": 0.5,
+      "tangentAnglesDegrees": [
+        44.54515874612781,
+        46.45484125387219
+      ],
+      "tangentDistancesCm": [
+        0.4999999999999979,
+        0.5000000000000029
+      ],
+      "result": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "distance_witness",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 3.0775499708030125,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": {
+          "angleDegrees": 44.54345703125001,
+          "distanceCm": 0.5000032029759965
+        },
+        "intervalEvaluations": 140,
+        "distanceEvaluations": 142,
+        "certifiedIntervals": 66,
+        "deepestLevel": 18,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      }
+    },
+    {
+      "name": "vertical_gap_combines_with_horizontal_distance",
+      "passed": true,
+      "clearGapCm": 0.6,
+      "clear": {
+        "status": "clear",
+        "label": "Path clear",
+        "reason": "all_intervals_certified",
+        "pathFullyCertified": true,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 24.007498828491066,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": null,
+        "intervalEvaluations": 415,
+        "distanceEvaluations": 417,
+        "certifiedIntervals": 208,
+        "deepestLevel": 9,
+        "certifiedMinimumLowerBoundCm": 0.5079483794664847,
+        "inputError": null
+      },
+      "exactBoundary": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "distance_witness",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 24.005207768315604,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": {
+          "angleDegrees": 45,
+          "distanceCm": 0.5
+        },
+        "intervalEvaluations": 1,
+        "distanceEvaluations": 3,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      },
+      "withinEpsilon": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "distance_witness",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 24.005208809808337,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": {
+          "angleDegrees": 45,
+          "distanceCm": 0.5000500000000017
+        },
+        "intervalEvaluations": 1,
+        "distanceEvaluations": 3,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      }
+    },
+    {
+      "name": "zero_angle_is_open_to_check_even_with_contact",
+      "passed": true,
+      "result": {
+        "status": "open_to_check",
+        "label": "Open to check",
+        "reason": "zero_angle",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": false,
+        "currentDistanceCm": 0,
+        "currentPanelOverlaps": true,
+        "currentWithinMargin": true,
+        "witness": null,
+        "intervalEvaluations": 0,
+        "distanceEvaluations": 1,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      }
+    },
+    {
+      "name": "resource_limits_and_invalid_input_fail_closed",
+      "passed": true,
+      "limitedDepth": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "depth_or_tolerance_limit",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": true,
+        "currentDistanceCm": 24.007498828491066,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": null,
+        "intervalEvaluations": 1,
+        "distanceEvaluations": 3,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      },
+      "limitedIntervals": {
+        "status": "blocked",
+        "label": "Path blocked",
+        "reason": "interval_limit",
+        "pathFullyCertified": false,
+        "conservativeUncertainty": true,
+        "currentDistanceCm": 24.007498828491066,
+        "currentPanelOverlaps": false,
+        "currentWithinMargin": false,
+        "witness": null,
+        "intervalEvaluations": 1,
+        "distanceEvaluations": 3,
+        "certifiedIntervals": 0,
+        "deepestLevel": 0,
+        "certifiedMinimumLowerBoundCm": null,
+        "inputError": null
+      },
+      "invalidCases": 6
+    },
+    {
+      "name": "hinge_rotation_sign_rigidity_and_actual_geometry_radius",
+      "passed": true,
+      "radiusCm": 60.00833275471,
+      "displacementChecks": 336,
+      "positiveOpeningTowardOutwardZ": true
+    },
+    {
+      "name": "independent_python_receipt_primary_status_agreement",
+      "passed": true,
+      "referenceKind": "public_expected_geometry_fixture",
+      "primaryComparisons": 8
+    }
+  ]
+}

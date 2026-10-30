@@ -1,0 +1,22 @@
+{
+  "tier": "interactive",
+  "theme": {"style":"flat procedural solids, cyan boundaries, light text, amber path blockage","purpose":"virtual example cabinet clearance rehearsal"},
+  "assets": [
+    {"type":"mesh","name":"HINGEROOMCabinetMesh","backend":"mesh-builder-scripting","target_size_cm":[60,80,38],"reason":"Assistant selected mesh-builder-scripting to implement the exact-size articulated cabinet in the user-adopted approved brief."},
+    {"type":"mesh","name":"HINGEROOMDoorMesh","backend":"mesh-builder-scripting","target_size_cm":[60,76,2],"reason":"Assistant selected mesh-builder-scripting to implement rigid transform articulation at the fixed hinge in the user-adopted approved brief."},
+    {"type":"mesh","name":"HINGEROOMObstacleController","backend":"mesh-builder-scripting","target_size_cm":[20,60,20],"reason":"Assistant selected mesh-builder-scripting to implement the exact obstacle in the user-adopted approved brief, with the same basis baked into visual and collider."},
+    {"type":"mesh","name":"HINGEROOMClearanceMesh","backend":"mesh-builder-scripting","reason":"Assistant selected mesh-builder-scripting to implement the parameterized visual arc and original footprint in the user-adopted approved brief; this mesh is not the collision algorithm."},
+    {"type":"ui","name":"HINGEROOMControlsUI","container":"BackPlate + FlexLayout","elements":[
+      {"element":"header","labels":["HINGEROOM","VIRTUAL EXAMPLE · cm","Cabinet 60 × 40 × 80","Door 60 × 76 × 2 · Box 20 × 20 × 60"]},
+      {"element":"slider","labels":["Door 110.0° / 110°"],"emits":["onAngle(degrees)"]},
+      {"element":"status","labels":["○ Open to check","✓ Path clear","▲ Path blocked","Current panel: touching / overlapping","Boundary uncertain · treated blocked"],"exposes":["setReading"]},
+      {"element":"instructions","labels":["Grab the box with one hand.","Checks the whole path from closed.","0.5 cm margin · virtual preset only"]},
+      {"element":"button","labels":["Reset example"],"emits":["onReset"],"exposes":["resetSlider"]},
+      {"element":"hint","labels":["← Door to the left","Door to the right →","↑ Door above","↓ Door below"],"exposes":["setDirectionHint"]}
+    ]}
+  ],
+  "spatial_layout":"Starting camera supplies flat view/right basis. Virtual floor anchor supplies floor Y. Cabinet front center at camera + view*140 cm, hinge 30 cm left. Cabinet shell local x=[0,60], y=[0,80], z=[-39,-1], closed door z=[-1,1], giving full 60x40x80 cm envelope. Obstacle center local (35,30,35). Clearance shares cabinet basis. Panel center local (30,110,8), width36cm, vertically adjacent above the cabinet with 3.25cm gap at default layout height53.5cm. This keeps controls within the central horizontal view of the narrow Preview. All world-fixed after initial placement; identity-scale obstacle collider wrapper at floor+30; basis baked into obstacle mesh and collider.",
+  "sfx":[],"icons":[],"music":[],
+  "geometry_tolerance_cm":0.0001,"clearance_margin_cm":0.5,
+  "hardware":"feel unproven"
+}
