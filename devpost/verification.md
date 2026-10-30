@@ -1,6 +1,6 @@
 # Verification
 
-The saved local project compiled and ran in **Windows Lens Studio 5.23.2.26081320**. These results concern the implemented project. Independent verification of a fresh exported checkout and the final demo recording remain pending.
+The saved local project compiled and ran in **Windows Lens Studio 5.23.2.26081320**. These results concern the implemented project. A fresh clone of public commit `61111808` also passed native import, Lens compilation and all six Preview LEAF scenarios. The local 170-second English demo is complete with sampled visual review. Public YouTube and final Devpost submission remain pending.
 
 ## Production geometry regressions
 
@@ -42,6 +42,14 @@ Lens Studio's TypeScript compilation succeeded separately. All **six registered 
 
 Use the installed LEAF panel, select **Preview**, and run the registered `hingeroom-*` scenarios. For strict reruns, use the supported diagnostic policy `fail-fast` and a 30-second timeout. An earlier probe used the unsupported value `fail` and fell back; the later strict successful run is the IK evidence used here.
 
+## Fresh public-clone verification
+
+A fresh clone of commit `61111808` passed Git content checks and the same 8-vector / 18-group native Node run. Lens Studio 5.23.2 then imported all eight packages from source, compiled TypeScript, started Preview without reported runtime errors, and completed all six LEAF scenarios with `fail-fast` and a 30-second timeout. No source repairs or package installs were needed. The historical screen-injected input checks below were not repeated in this run.
+
+Native import recorded nine warnings: one QObject disconnect, seven GLSL include-version skips and a repeated-reset warning. Two scenario logs also reported deprecated `extractVerticesForAttribute` use. The import-warning cause was not established; later startup and all six scenarios succeeded.
+
+The clone's 199-pixel-wide native Preview dock limited composition and readability assessment. Separate runtime close-up and wide renders are distinct evidence. No explicit project save was issued in the clone; persisted-save evidence comes from the original build. Physical Specs remain untested.
+
 ## Separate screen-input checks
 
 Desktop input was also exercised through `InjectPreviewGesture` screen-coordinate touch events, with projected targets, calibrated letterbox coordinates, cursor acquisition and separate rendered frames between press, move and release. Runtime queries corroborated effects after injection:
@@ -52,23 +60,23 @@ Desktop input was also exercised through `InjectPreviewGesture` screen-coordinat
 
 These are screen-injected Preview interactions, separate from LEAF's SIK calls. Gesture acknowledgements alone are not evidence of movement. They do not establish ordinary physical mouse usability, actual hand tracking or on-device behavior. Temporary projection/debug probes were removed from the saved application. The earlier `hingeroom-mouse-projection` diagnostic is not one of the six registered functional scenarios and is not counted as a UI pass.
 
-## Remaining checks
+## Verification status
 
 | Check | Status |
 | --- | --- |
-| Production geometry: 8 vectors / 18 groups | Passed in native Node |
-| Lens TypeScript compilation | Passed locally |
-| Six functional LEAF scenarios | Passed in Preview |
+| Production geometry: 8 vectors / 18 groups | Passed in native Node locally and from a fresh public clone |
+| Lens TypeScript compilation | Passed locally and from the fresh public clone |
+| Six functional LEAF scenarios | Passed in Preview locally and from the fresh public clone |
 | Strict simulated IK Reset | Passed in Preview with `fail-fast` |
 | Screen-injected slider, box drag and Reset | Effects corroborated by runtime state |
 | Saved scene, authored assets and temporary-probe cleanup | Checked in the local build |
-| Full presentation framing, readability across views and final Preview-dock recording composition | Final review pending; a frontal control view has been inspected |
-| Fresh exported project / independent clean checkout imports and runs | Pending |
-| Final public source-content review and retained notices | Pending export review |
-| Public demo under three minutes showing the actual working Preview | Pending |
+| Local English demo and sampled visual review | 170 seconds complete; wide-view text and native-dock limitations retained |
+| Fresh public clone imports, compiles and runs | Passed; all six Preview LEAF scenarios succeeded |
+| Public source-content review and retained notices | Completed; public repository published |
+| Public YouTube demo under three minutes | Pending upload; 170-second local movie complete |
 | Final submission links and judge access | Pending |
 
-For the demo, show the actual 90 degrees endpoint: the current panel is clear while the opening route remains blocked. A final recording must show actual Preview behavior; calculations and successful diagnostic calls do not substitute for it.
+The local English movie shows the current panel clear while the whole opening route remains blocked, including a readable close-up of the actual Preview status. It uses real-time cuts from recorded Preview simulated input, with an obstacle setup cut disclosed. Review covered sampled encoded frames, timing and audio-signal correspondence; full-motion human playback and human listening were not performed. World-space labels remain small in wide shots. Public YouTube upload and final Devpost submission remain pending.
 
 ## Hardware boundary
 
