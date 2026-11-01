@@ -1,6 +1,6 @@
 # Verification
 
-The saved local project compiled and ran in **Windows Lens Studio 5.23.2.26081320**. These results concern the implemented project. A fresh clone of public commit `61111808` also passed native import, Lens compilation and all six Preview LEAF scenarios. The 170-second (2:50) English demo is [public on YouTube](https://youtu.be/vYsI43u-ylw), with HD processing complete and sampled visual review. The [Devpost submission](https://devpost.com/software/hingeroom) is complete (Submitted, 5/5 steps).
+The saved local project compiled and ran in **Windows Lens Studio 5.23.2.26081320**. These results concern the implemented project. A fresh clone of public commit `61111808` also passed native import, Lens compilation and all six Preview LEAF scenarios. The 170-second (2:50) English demo is [public on YouTube](https://youtu.be/q0aeqVssSWM), with HD processing complete and sampled visual review. The [Devpost submission](https://devpost.com/software/hingeroom) is complete (Submitted, 5/5 steps).
 
 ## Production geometry regressions
 
@@ -73,7 +73,7 @@ These are screen-injected Preview interactions, separate from LEAF's SIK calls. 
 | Local English demo and sampled visual review | 170 seconds complete; wide-view text and native-dock limitations retained |
 | Fresh public clone imports, compiles and runs | Passed; all six Preview LEAF scenarios succeeded |
 | Public source-content review and retained notices | Completed; public repository published |
-| Public YouTube demo under three minutes | [Published publicly](https://youtu.be/vYsI43u-ylw); 2:50, HD processing complete |
+| Public YouTube demo under three minutes | [Published publicly](https://youtu.be/q0aeqVssSWM); 2:50, HD processing complete |
 | Final submission and saved links | [Submitted on Devpost](https://devpost.com/software/hingeroom); 5/5 steps complete and saved repository/video links read back |
 
 The local English movie shows the current panel clear while the whole opening route remains blocked, including a readable close-up of the actual Preview status. It uses real-time cuts from recorded Preview simulated input, with an obstacle setup cut disclosed. Review covered sampled encoded frames, timing and audio-signal correspondence; full-motion human playback and human listening were not performed. World-space labels remain small in wide shots. The YouTube demo is public and the Devpost submission is complete. Public visibility was saved and logged-in playback verified; separate signed-out access was not tested.

@@ -1,6 +1,6 @@
 # Build notes
 
-HINGEROOM is an implemented local Lens Studio prototype. Production geometry regressions, Lens compilation and six Preview LEAF scenarios passed. A fresh clone of public commit `61111808` also passed the Node checks, native Lens Studio import and compilation, and all six Preview LEAF scenarios. The 170-second (2:50) English demo is [public on YouTube](https://youtu.be/vYsI43u-ylw), with HD processing complete and sampled visual review. The [Devpost submission](https://devpost.com/software/hingeroom) is complete (Submitted, 5/5 steps). Import warnings and native-dock limitations are documented in [verification](verification.md).
+HINGEROOM is an implemented local Lens Studio prototype. Production geometry regressions, Lens compilation and six Preview LEAF scenarios passed. A fresh clone of public commit `61111808` also passed the Node checks, native Lens Studio import and compilation, and all six Preview LEAF scenarios. The 170-second (2:50) English demo is [public on YouTube](https://youtu.be/q0aeqVssSWM), with HD processing complete and sampled visual review. The [Devpost submission](https://devpost.com/software/hingeroom) is complete (Submitted, 5/5 steps). Import warnings and native-dock limitations are documented in [verification](verification.md).
 
 ## Scope and workflow
 
